@@ -1,0 +1,63 @@
+/* Importing Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{ 
+	margin: 0;/*remove default margin for all elements.*/
+	padding: 0;/*remove default padding for all elements*/
+	font-family: "Poppins", sans-serif;/*setting font*/
+	overflow:auto;/*allows scrolling*/
+}
+
+/*background image and whole site css*/
+
+body{
+	min-height: 100vh; /*ensure body fits screen always*/
+	background-image: url("Images/gardening.jpg"); /*background img*/
+	background-size: cover; /*scale image to fit screen*/
+    background-position: center;/*keeps image centered*/
+    background-repeat: no-repeat;/*prevent background tilting */
+}
+
+/*navbar*/
+
+nav{ 
+	background-color: #ECE5F0;/*navbar color*/
+	box-shadow: 3px 3px 5px rgba(0,0,0,0.1);/*small shadow*/
+}
+
+nav ul{ 
+	width:100%;/*navbar spans full width of page*/
+	padding-top: 5px; /*give items headspace to be rounded*/
+	padding-bottom: 5px; /*give items legspace to be rounded*/
+	list-style:none;/*remove default bullet points*/
+	display:flex;/*horizontal layout for list items*/
+	justify-content: flex-end;/*push links to right*/
+	align-items: center;/*vertically center links*/
+}
+
+nav li{
+	height: 50px;/*sets consistent height for navbar items*/
+}
+
+nav a{ /*icons edit*/
+	text-decoration: none;/*remove underline from link*/
+	height:100%;/*make link fill its parent link height*/
+	padding:0 25px;/*horizontal spacing around link text*/
+	display:flex;/*enable flex to vertically center content*/
+	align-items:center;/*vertically center text within link*/
+	color: #764248;/*link text color*/
+}
+
+nav a:hover{ /*hover coloring*/
+	background-color: #BDE4A8;/*bg color on hover*/
+	border-radius:1000px;/*rounded corner*/
+}
+
+nav li:first-child{
+	margin-right:auto;/*put first item on list to the right*/
+	padding-left:5px;/*give first item rounded corner*/
+}
+
+nav li:last-child{
+	padding-right: 5px;/*give last item rounded corner*/
+}

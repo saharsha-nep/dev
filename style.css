@@ -61,3 +61,17 @@ nav li:first-child{
 nav li:last-child{
 	padding-right: 5px;/*give last item rounded corner*/
 }
+
+/*footer stuff*/
+footer{
+	background-color: #493548; /*footer background color*/
+	box-shadow: 3px 3px 5px rgba(0,0,0,0.1);/*small shadow*/
+}
+footer a{
+	text-decoration: none;/*remove underline from link*/
+	height:100%;/*make link fill its parent link height*/
+	padding:0 25px;/*horizontal spacing around link text*/
+	display:flex;/*enable flex to vertically center content*/
+	align-items:center;/*vertically center text within link*/
+	color: #764248;/*link text color*/
+}

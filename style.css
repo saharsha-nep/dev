@@ -5,7 +5,6 @@
 	margin: 0;/*remove default margin for all elements.*/
 	padding: 0;/*remove default padding for all elements*/
 	font-family: "Poppins", sans-serif;/*setting font*/
-	overflow:auto;/*allows scrolling*/
 }
 
 /*background image and whole site css*/
@@ -16,6 +15,8 @@ body{
 	background-size: cover; /*scale image to fit screen*/
     background-position: center;/*keeps image centered*/
     background-repeat: no-repeat;/*prevent background tilting */
+    display:flex;
+    flex-direction: column;
 }
 
 /*navbar*/
@@ -59,19 +60,38 @@ nav li:first-child{
 }
 
 nav li:last-child{
-	padding-right: 5px;/*give last item rounded corner*/
+	padding-right: 5px;
 }
 
 /*footer stuff*/
-footer{
-	background-color: #493548; /*footer background color*/
-	box-shadow: 3px 3px 5px rgba(0,0,0,0.1);/*small shadow*/
+footer {
+    background-color: #493548;
+    color: #ECE5F0;
+    padding: 30px 40px;
+    margin-top: auto;
 }
-footer a{
-	text-decoration: none;/*remove underline from link*/
-	height:100%;/*make link fill its parent link height*/
-	padding:0 25px;/*horizontal spacing around link text*/
-	display:flex;/*enable flex to vertically center content*/
-	align-items:center;/*vertically center text within link*/
-	color: #764248;/*link text color*/
+
+/* main layout */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* left side */
+.footer-left h2 {
+    margin-bottom: 10px;
+}
+
+.footer-left p {
+    max-width: 250px;
+}
+
+/* right side */
+.footer-right {
+    text-align: right;
+}
+
+.footer-right p {
+    margin: 5px 0;
 }

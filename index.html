@@ -5,26 +5,108 @@
         <meta name="author" content="Group 2">
         <meta name="description" content="Product page for UrbanSprout">
         <meta name="keywords" content="Urban gardening, seed kits, home gardening, planting, plants">
-        <link rel="stylesheet" href="style.css"> <!--External CSS-->
+        <link rel="stylesheet" href="CSS/style.css"> <!--External CSS-->
+        <style>
+            .info {
+                background: rgba(236, 229, 240, 0.85);
+                margin: 40px 80px; /* more space around section */
+                padding: 40px 60px; /* more breathing room inside */
+            }
+
+            .info h2 {
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            .info table {
+                width: 100%;
+                text-align: center;
+                table-layout: fixed;
+            }
+
+            .info td {
+                padding: 25px; /* more spacing between columns */
+                vertical-align: top;
+            }
+
+            .hero {
+                text-align: center;
+                padding: 90px 20px 70px;
+                color: #ECE5F0;
+                background: rgba(0, 0, 0, 0.25); /* subtle separation */
+            }
+
+            /* title */
+            .hero-text h1 {
+                font-size: 52px;
+                margin-bottom: 10px;
+            }
+
+            /* tagline */
+            .hero-text p {
+                font-size: 18px;
+                opacity: 0.9;
+                margin-top: 10px;
+            }
+        </style>
     </head>
-    <body>
+    <body onload="greeting(); changeText();">
         <!-- Navigation bar -->
         <header>
             <nav>
                 <ul>
                     <li><a href="index.html">UrbanSprout</a></li>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="research.html">Research</a></li>
-                    <li><a href="aboutus.html">About</a></li>
-                    <li><a href="signin.html">Login</a></li>
+                    <li><a href="Pages/products.html">Products</a></li>
+                    <li><a href="Pages/blog.html">Blog</a></li>
+                    <li><a href="Pages/research.html">Research</a></li>
+                    <li><a href="Pages/aboutus.html">About</a></li>
+                    <li><a href="Pages/signin.html">Login</a></li>
                 </ul>
             </nav>
         </header>
 
         <!-- Hero Section -->
-        
+        <section class="hero">
+            <!-- Function -->
+            <div id="greeting"></div>
+
+            <div class="hero-text">
+                <h1>UrbanSprout</h1>
+                <p id="changing-text">To make your apartment feel like a home</p>
+            </div>
+        </section>
+        <!-- Info Section -->
+        <section class="info">
+            <h2>What you can expect</h2>
+            <table>
+                <tr>
+                    <td>
+                        <h3>Easy to Start</h3>
+                        <p>Beginner-friendly gardening kits and guides for small spaces.</p>
+                    </td>
+                    <td>
+                        <h3>Smart Solutions</h3>
+                        <p>Simple tools to help you grow plants efficiently at home.</p>
+                    </td>
+                    <td>
+                        <h3>Sustainable Living</h3>
+                        <p>Grow your own plants while reducing waste.</p>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <hr>
+
+        <!-- About Section -->
+        <section class="info">
+            <h2>Our Story</h2>
+            <p>
+                UrbanSprout was created to make gardening simple and accessible for people living in cities.
+                Even with limited space, anyone can enjoy growing plants at home.
+            </p>
+        </section>
         <!-- Footer Section -->
         <footer>
             <div class="footer-container">
@@ -42,6 +124,6 @@
             </div>
         </footer>
         <!-- Page Script-->
-        <script src="script.js"></script>
+        <script src="JS/script.js"></script>
     </body> 
 </html>

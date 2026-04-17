@@ -11,7 +11,7 @@
 
 body{
 	min-height: 100vh; /*ensure body fits screen always*/
-	background-image: url("Images/gardening.jpg"); /*background img*/
+	background-image: url("../Images/gardening.jpg"); /*background img*/
 	background-size: cover; /*scale image to fit screen*/
     background-position: center;/*keeps image centered*/
     background-repeat: no-repeat;/*prevent background tilting */
@@ -94,4 +94,18 @@ footer {
 
 .footer-right p {
     margin: 5px 0;
+}
+
+#greeting {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #ECE5F0;
+}
+
+#changing-text {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #ECE5F0;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
 }

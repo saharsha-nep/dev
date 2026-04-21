@@ -37,6 +37,10 @@ function showOffer() {
     alert("Limited Time Offer! 15% Discounts available on all products!");
 }
 
+function addtocart(){
+    alert("Item added to cart!")
+}
+
 function changeText() {
     const messages = [
         "To make your apartment feel like a home",

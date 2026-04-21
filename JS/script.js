@@ -34,7 +34,7 @@ function greeting() {
 }
 
 function showOffer() {
-    alert("Limited Time Offer! Discounts available on all products!");
+    alert("Limited Time Offer! 15% Discounts available on all products!");
 }
 
 function changeText() {

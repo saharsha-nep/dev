@@ -1,31 +1,33 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>UrbanSprout - Products</title>
-		<meta name="author" content="Group 2">
-		<meta name="description" content="Product page for UrbanSprout">
-		<meta name="keywords" content="Urban gardening, seed kits, home gardening, planting, plants">
-		<link rel="stylesheet" href="../CSS/style.css"> <!--External CSS-->
+    <head>
+        <title>UrbanSprout - Products</title>
+        <meta name="author" content="Group 2">
+        <meta name="description" content="Product page for UrbanSprout">
+        <meta name="keywords" content="Urban gardening, seed kits, home gardening, planting, plants">
+        <link rel="stylesheet" href="../CSS/style.css">
         <style>
         .products img {
             width: 250px;
             height: 250px;
-            object-fit: cover; /* keeps images uniform without stretching */
+            object-fit: cover;
             border-radius: 8px;
             background: rosybrown;
             padding: 8px;
         }
         .products td {
-            background: rgba(236, 229, 240, 0.55); /* soft panel */
+            background: rgba(236, 229, 240, 0.55);
             border-radius: 10px;
             padding: 20px;
         }
         .products table {
-            border-spacing: 15px; /* creates gaps between product cards */
+            border-spacing: 15px;
         }
         </style>
     </head>
-    <body>
+    
+    <body onload="showOffer()">
+
         <!-- Navigation bar -->
         <header>
             <nav>
@@ -41,66 +43,139 @@
             </nav>
         </header>
 
-		<!-- Page Content-->
         <!-- Products Section -->
         <section class="products">
             <h1 style="text-align:center; margin:20px 0;color:blanchedalmond;">Our Products</h1>
+            
             <table style="width:100%; text-align:center; table-layout:fixed;">
+                <tr><td colspan="4"><h2>Kits</h2></td></tr>
                 <tr>
-                    <td style="padding:20px;">
+                    <td>
                         <h3>Starter Seed Kit</h3>
-                        <img src="../Images/seedkit.jpg" alt="Picture of seeds" width="150" onclick="showOffer()">
-                        <p><strong>Beginner-friendly gardening starter kit</strong></p>
-                        <p>Designed for first-time gardeners to easily grow fresh herbs at home with minimal effort.</p>
-                        <p>Perfect for balconies, kitchen spaces, and small indoor setups.</p>
-                        <p><s>5000Rs</s> <strong>3500Rs</strong></p>
+                        <img src="../Images/seedkit.jpg" alt="Picture of seeds">
+                        <p><strong>Tons of different seeds to choose from</strong></p>
+                        <p><s>5000Rs</s> <strong>4250Rs</strong></p>
                     </td>
-                    <td style="padding:20px;">
-                        <h3>Indoor Pot Set</h3>
-                        <img src="../Images/pot.jpg" alt="Picture of pots" width="150" onclick="showOffer()">
-                        <p><strong>Compact and space-efficient planter set</strong></p>
-                        <p>Stylish pots designed to fit small apartments while keeping your plants organized and healthy.</p>
-                        <p>Ideal for decorative and functional indoor gardening.</p>
-                        <p><s>3000Rs</s> <strong>2400Rs</strong></p>
+                    <td>
+                        <h3>Herb Growing Kit</h3>
+                        <img src="../Images/herbkit.jpg" alt="Picture of different herbs">
+                        <p><strong>Complete home herb growing solution</strong></p>
+                        <p><s>3500Rs</s> <strong>2975Rs</strong></p>
+                    </td>
+                    <td>
+                        <h3>Soil Testing Kit</h3>
+                        <img src="../Images/soiltesting.jpg" alt="Picture of soil testing kit">
+                        <p><strong>Amazing kit to check soil health</strong></p>
+                        <p><s>3500Rs</s> <strong>2975Rs</strong></p>
+                    </td>
+                    <td>
+                        <h3>Grafting Kit</h3>
+                        <img src="../Images/graftingkit.jpg" alt="Picture of grafting kit">
+                        <p><strong>Make plant grafting simple and efficient</strong></p>
+                        <p><s>3500Rs</s> <strong>2975Rs</strong></p>
                     </td>
                 </tr>
+                <!-- New Row -->
+                <tr><td colspan="4"><h2>Pots & Setup</h2></td></tr>
                 <tr>
-                    <td style="padding:20px;">
-                        <h3>Herb Growing Kit</h3>
-                        <img src="../Images/herbkit.jpg" alt="Picture of different herbs" width="150" onclick="showOffer()">
-                        <p><strong>Complete home herb growing solution</strong></p>
-                        <p>Grow fresh basil, mint, and coriander easily with a ready-to-use all-in-one kit.</p>
-                        <p>No prior gardening experience required.</p>
-                        <p><s>3500Rs</s> <strong>2900Rs</strong></p>
+                    <td>
+                        <h3>Indoor Pot Set</h3>
+                        <img src="../Images/pot.jpg" alt="Picture of pots">
+                        <p><strong>Compact and space efficient planter set</strong></p>
+                        <p><s>3000Rs</s> <strong>2550Rs</strong></p>
                     </td>
-                    <td style="padding:20px;">
-                        <h3>Basic Gardening Tools</h3>
-                        <img src="../Images/tools.jpg" alt="Picture with gardening tools" width="150" onclick="showOffer()">
-                        <p><strong>Essential toolkit for everyday plant care</strong></p>
-                        <p>Includes all basic tools needed for planting, trimming, and maintaining your home garden.</p>
-                        <p>Durable and beginner-friendly design for long-term use.</p>
+                    <td>
+                        <h3>Hanging Pot</h3>
+                        <img src="../Images/hangingpot.jpg" alt="Picture with hanging pots">
+                        <p><strong>Available in 4 stylish designs</strong></p>
                         <p><s>2000Rs</s> <strong>1700Rs</strong></p>
+                    </td>
+                    <td>
+                        <h3>Automatic Compost Bin</h3>
+                        <img src="../Images/compostbin.jpg" alt="Picture with compostbin">
+                        <p><strong>Turn waste into useful compost easily</strong></p>
+                        <p><s>2000Rs</s> <strong>1700Rs</strong></p>
+                    </td>
+                    <td>
+                        <h3>Grow Bags</h3>
+                        <img src="../Images/growbag.jpg" alt="Picture of grow bags">
+                        <p><strong>Breathable and lightweight planting bags</strong></p>
+                        <p><s>3000Rs</s> <strong>2550Rs</strong></p>
+                    </td>
+                </tr>
+                <!-- New Row-->
+                <tr><td colspan="4"><h2>Plant Care</h2></td></tr>
+                <tr>
+                    <td>
+                        <h3>All Purpose Fertilizer</h3>
+                        <img src="../Images/fertilizer.jpg" alt="Picture of fertilizer">
+                        <p><strong>Provides essential nutrients for plants</strong></p>
+                        <p><s>3000Rs</s> <strong>2550Rs</strong></p>
+                    </td>
+                    <td>
+                        <h3>Pesticide Spray</h3>
+                        <img src="../Images/pesticide.jpg" alt="Picture of pesticide spray">
+                        <p><strong>Protects plants from common pests</strong></p>
+                        <p><s>5000Rs</s> <strong>4250Rs</strong></p>
+                    </td>
+                    <td>
+                        <h3>Watering Can</h3>
+                        <img src="../Images/wateringcan.jpg" alt="Picture of a watering can">
+                        <p><strong>Durable and easy to use</strong></p>
+                        <p><s>2000Rs</s> <strong>1700Rs</strong></p>
+                    </td>
+                    <td>
+                        <h3>Neem Oil Spray</h3>
+                        <img src="../Images/neemoilspray.jpg" alt="Picture of neem oil spray">
+                        <p><strong>Organic pest control solution</strong></p>
+                        <p><s>3500Rs</s> <strong>2975Rs</strong></p>
+                    </td>
+                </tr>
+                <!-- New Row-->
+                <tr><td colspan="4"><h2>Tools & Accessories</h2></td></tr>
+                <tr>
+                    <td>
+                        <h3>Basic Gardening Tools</h3>
+                        <img src="../Images/tools.jpg" alt="Picture with gardening tools">
+                        <p><strong>Essential tools for daily gardening</strong></p>
+                        <p><s>2000Rs</s> <strong>1700Rs</strong></p>
+                    </td>
+                    <td>
+                        <h3>Pruning Shears</h3>
+                        <img src="../Images/pruningshears.jpg" alt="Picture of pruning shears">
+                        <p><strong>Sharp shears for clean cuts</strong></p>
+                        <p><s>3500Rs</s> <strong>2975Rs</strong></p>
+                    </td>
+                    <td>
+                        <h3>Gardening Gloves</h3>
+                        <img src="../Images/gardeninggloves.jpg" alt="Picture of gardening gloves">
+                        <p><strong>Protective and comfortable gloves</strong></p>
+                        <p><s>2000Rs</s> <strong>1700Rs</strong></p>
+                    </td>
+                    <td>
+                        <h3>Mushroom Lights</h3>
+                        <img src="../Images/mushroomlights.jpg" alt="Picture of mushroom lights">
+                        <p><strong>Decorative lights for your garden</strong></p>
+                        <p><s>3000Rs</s> <strong>2550Rs</strong></p>
                     </td>
                 </tr>
             </table>
         </section>
-		<!-- Footer Section -->
+
+        <!-- Footer -->
         <footer>
             <div class="footer-container">
-
                 <div class="footer-left">
                     <h2>UrbanSprout</h2>
                     <p>For all your gardening needs</p>
                 </div>
-
                 <div class="footer-right">
                     <p>Contact: info@urbansprout.com</p>
                     <p>© 2026 UrbanSprout</p>
                 </div>
-
             </div>
         </footer>
-        <!-- Page Script-->
+
         <script src="../JS/script.js"></script>
     </body> 
 </html>

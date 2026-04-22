@@ -7,20 +7,40 @@
 		<meta name="keywords" content="Urban gardening, seed kits, home gardening, technology, sustainability">
 		<link rel="stylesheet" href="../CSS/style.css">
 		<style>
-			.blog{
-				padding:30px;
-				background: rgba(255,255,255,0.9);
-				margin:20px;
-			}	
-			.blog p{
-				line-height:1.6;
-			}
-			.blog ul{
-				padding-left:25px;
-			}
-			.blog h2{
-				color:#2E7D32;
-			}
+			.content {
+                display: flex;
+                margin: 20px;
+                gap: 20px;
+                align-items: stretch;
+            }
+
+            .txt {
+                flex: 3;
+                background: rgba(236, 229, 240, 0.85);
+                padding: 15px;
+                border-radius: 10px;
+            }
+
+            .photo {
+                flex: 1;
+                display: flex;
+            }
+
+            .photo img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+
+            .txt h2{
+                color: forestgreen;
+            }
+
+            .blog-wrapper {
+                margin: 20px;
+                border-radius: 10px;
+            }
 		</style>
 	</head>
 
@@ -39,129 +59,89 @@
                 </ul>
             </nav>
         </header>
+        <!-- Page Content-->
+        <h1 style="text-align: center; color:darkgreen;font-size: 50px;">Blog</h1>
+        <!-- 1 -->
+        <div class="blog-wrapper">
+            <div class="content">
+                <div class="txt">
+                    <h2>About Technology in Urban Gardening</h2>
+                    <p>Technology is what makes urban gardening possible and fun. The use of modern tools in small spaces like balconies and rooftops allows everyone to take part in gardening. Using devices like smart irrigation systems, moisture sensor, temperature sensor, light sensors and even mobile apps that guide planting schedules and plant care makes gardening easy for beginners and city residents.</p>
+                </div>
+                <div class="photo">
+                    <img src="../Images/1.jpg" alt="Picture of Technology in Urban Gardening">
+                </div>
+            </div>
+            <!-- 2 -->
+            <div class="content">
+                <div class="photo">
+                    <img src="../Images/2.jpg" alt="Picture of Positive Impact of Technology">
+                </div>
+                <div class="txt">
+                    <h2>Positive Impact of Technology</h2>
+                    <p>The use of technology in urban gardening allows people to save water through automated irrigation systems, increase crop yield in small spaces, reduce manual effort and even reduce the time needed to tend to plants. It also enables year round farming with controlled environments, not to mention real time monitoring and data tracking. With how easy technology has made gardening, it encourages more people to start gardening.</p>
+                </div>
+            </div>
+            <!-- 3 -->
+            <div class="content">
+                <div class="txt">
+                    <h2>Negative Impact Of Technology</h2>
+                    <p>While technology does make urban gardening easy, it is in no way cheap. The equipment can cost a lot, and it is a headache to set up. There is high dependency on electricity and internet, and the user must have technical knowledge to operate the technology properly. In the case of system failure, the plants could be affected and overall it causes a decline in traditional gardening skills.</p>
+                </div>
+                <div class="photo">
+                    <img src="../Images/3.jpg" alt="Picture of Negative Impact Of Technology">
+                </div>
+            </div>
+            <!-- 4 -->
+            <div class="content">
+                <div class="photo">
+                    <img src="../Images/4.jpg" alt="Picture of Sustainable Living Tips & Tricks">
+                </div>
+                <div class="txt">
+                    <h2>Sustainable Living Tips & Tricks</h2>
+                    <p>You can use recycled containers for planting, use kitchen waste like peels of vegetables and fruits as compost to use as natural fertilizer. You can collect rainwater for irrigation, grow seasonal and local plants and even avoid chemical pesticides by using natural alternatives like neem oil.</p>
+                </div>
+            </div>
+            <!-- 5 -->
+            <div class="content">
+                <div class="txt">
+                    <h2>Interviews with Sustainable Brands & Experts</h2>
+                    <p>Interviews with sustainable brands and gardening experts provide valuable insights into eco-friendly practices and modern techniques. These experts share their experiences, tips, and innovative ideas that help people adopt more sustainable gardening methods. Learning from professionals also builds trust and encourages responsible use of technology in urban gardening.</p>
+                </div>
+                <div class="photo">
+                    <img src="../Images/5.jpg" alt="Interviews with Sustainable Brands & Experts">
+                </div>
+            </div>
+            <!-- 6 -->
+            <div class="content">
+                <div class="photo">
+                    <img src="../Images/6.jpg" alt="Picture of News & Updates on Environmental Issues">
+                </div>
+                <div class="txt">
+                    <h2>News & Updates on Environmental Issues</h2>
+                    <p>Staying updated on environmental issues helps people understand the importance of sustainable practices. Topics like climate change, pollution, and resource conservation directly affect urban gardening. New technologies and government initiatives are constantly emerging to support greener living, making it important to stay informed.</p>
+                </div>
+            </div>
+            <!-- 7 -->
+            <div class="content">
+                <div class="txt">
+                    <h2>Community Stories & Successes</h2>
+                    <p>Community stories show how individuals and groups successfully grow plants in small urban spaces like balconies and rooftops. These success stories inspire others to start gardening and demonstrate that it is possible even with limited space. They also promote sharing knowledge, resources, and building a stronger, eco-friendly community.</p>
+                </div>
+                <div class="photo">
+                    <img src="../Images/7.jpg" alt="Picture of Community Stories & Successes">
+                </div>
+            </div>
+            <!-- 8 -->
+            <div class="content">
+                <div class="txt">
+                    <h2 style="text-align: center;">Overall Conclusion</h2>
+                    <p>Technology has made urban gardening more accessible, efficient, and sustainable. It helps overcome challenges like limited space and resource management in cities. However, it is important to use technology responsibly to avoid negative impacts such as high costs and environmental waste. A balanced approach between technology and natural methods is key to sustainable urban gardening.</p>
+                </div>
+            </div>
+        </div>
 
-		<section class="blog">
-			<article>
-				<h1 style="text-align:center;color:#2E7D32;"><u>Urban Gardening and Technology</u></h1>
-				<table>
-					<tr>
-						<td>
-							<img src="../Images/sahi pic of urban garden w sun.jpg" alt="Urban garden" width="300">
-						</td>
-						<td style="vertical-align:top;">
-							<p>
-								Urban gardening has evolved from a simple hobby into a technology-supported lifestyle practice.
-								Modern tools such as mobile applications, automated watering systems, and smart sensors are enabling city residents
-								to grow plants efficiently in limited spaces like balconies and kitchens.
-							</p>
-							<p>
-								These technologies improve accessibility by reducing manual effort and making plant care more predictable.
-								They also support sustainable living by reducing food waste and encouraging home-based food production.
-							</p>
-							<p>
-								As a result, urban gardening now combines convenience, sustainability, and creativity in everyday urban life.
-							</p>
-						</td>
-					</tr>
-				</table>
-				<hr>
-				<h2>Smart Gardening Systems</h2>
-				<table>
-					<tr>
-						<td style="vertical-align:top;">
-							<p>
-								Smart gardening systems use sensors to monitor soil moisture, temperature, and sunlight levels in real time.
-								The collected data is sent to mobile devices or control systems that assist users in managing plant care.
-							</p>
-							<p>
-								These systems reduce uncertainty in watering schedules and help prevent common issues such as overwatering or underwatering.
-								They are especially useful for beginners who lack prior gardening experience.
-							</p>
-							<p>
-								Overall, they improve plant survival rates and make small-space gardening more efficient.
-							</p>
-						</td>
-						<td>
-							<img src="../Images/drip irrgation pic.jpg" alt="Drip irrigation system" width="300">
-						</td>
-					</tr>
-				</table>
-				<hr>
-				<h2>Mobile Applications in Gardening</h2>
-				<table>
-					<tr>
-						<td>
-							<img src="../Images/mobile.jpg" width="300" alt="Gardening app">
-						</td>
-						<td style="vertical-align:top;">
-							<p>
-								Gardening applications provide digital support for plant care through reminders, identification tools, and guidance systems.
-							</p>
-							<p><strong>Key functions include:</strong></p>
-							<ul>
-								<li>Plant disease identification using images</li>
-								<li>Location-based plant recommendations</li>
-								<li>Step-by-step care instructions for specific plants</li>
-							</ul>
-							<p>
-								These features make gardening more accessible to beginners and improve consistency in plant maintenance through timely alerts and guidance.
-							</p>
-						</td>
-					</tr>
-				</table>
-				<hr>
-				<h2>Sustainable Urban Gardening</h2>
-				<table>
-					<tr>
-						<td style="vertical-align:top;">
-							<p>
-								Technology also supports sustainability in urban gardening by optimizing resource usage.
-							</p>
-							<p><strong>Examples include:</strong></p>
-
-							<ul>
-								<li>Smart irrigation systems that reduce water waste</li>
-								<li>Compact composting units for kitchen waste conversion</li>
-								<li>Sensor-based systems that optimize nutrients and light exposure</li>
-							</ul>
-							<p>
-								These innovations reduce environmental impact while improving productivity in small urban spaces.
-							</p>
-						</td>
-						<td>
-							<img src="../Images/sahi image of compact kitchen composting machine.jpg" alt="Composting machine" width="300">
-						</td>
-					</tr>
-				</table>
-				<hr>
-				<h2>Future of Urban Gardening</h2>
-				<table>
-					<tr>
-						<td>
-							<img src="../Images/sahi image of some indoor futurist garden w led.jpg" alt="Future garden" width="300">
-						</td>
-						<td style="vertical-align:top;">
-							<p>
-								The future of urban gardening is expected to be highly automated through artificial intelligence and IoT-based systems.
-							</p>
-							<p>
-								These systems will be capable of predicting plant growth patterns and adjusting environmental conditions automatically.
-							</p>
-							<p>
-								This will reduce manual effort further and increase food production efficiency in densely populated urban areas.
-							</p>
-						</td>
-					</tr>
-				</table>
-				<hr>
-				<h1 style="text-align:center;">Conclusion</h1>
-				<p>
-					Urban gardening supported by modern technology is transforming how people interact with nature in cities.
-					It enables efficient food production, promotes sustainability, and improves accessibility for beginners.
-					This combination of technology and gardening provides a practical solution for modern urban lifestyles.
-				</p>
-			</article>
-		</section>
+        
 		<!-- Footer -->
         <footer>
             <div class="footer-container">

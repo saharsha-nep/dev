@@ -7,28 +7,46 @@
         <meta name="keywords" content="Urban gardening, seed kits, home gardening, planting, plants">
         <link rel="stylesheet" href="../CSS/style.css">
         <style>
-        .products img {
-            width: 250px;
-            height: 250px;
-            object-fit: cover;
-            border-radius: 8px;
-            background: rosybrown;
-            padding: 8px;
-        }
-        .products td {
-            background: rgba(236, 229, 240, 0.55);
-            border-radius: 10px;
-            padding: 20px;
-        }
-        .products table {
-            border-spacing: 15px;
-        }
-        .products h2{
-            color:#FAEDCA;
-        }
-        .products h3{
-            font-weight: bold;
-        }
+            /* Product card images */
+            .products img {
+                width: 250px;
+                height: 250px;
+                object-fit: cover;
+                border-radius: 8px;
+                background: rosybrown;
+                padding: 8px;
+            }
+            /* Individual product card */
+            .products td {
+                background: rgba(236, 229, 240, 0.55);
+                border-radius: 10px;
+                padding: 20px;
+            }
+            /* Spacing between cards */
+            .products table {
+                border-spacing: 15px;
+            }
+            /* Category heading color */
+            .products h2{
+                color:#FAEDCA;
+            }
+            .products h3{
+                font-weight: bold;
+            }
+            /* See more button */
+            .see-more-btn {
+                display: inline-block;
+                margin-top: 8px;
+                padding: 6px 16px;
+                background: #483C46;
+                color: #FAEDCA;
+                text-decoration: none;
+                border-radius: 5px;
+                font-size: 0.9rem;
+            }
+            .see-more-btn:hover {
+                background: #6a5a6e;
+            }
         </style>
     </head>
     
@@ -50,22 +68,27 @@
         </header>
 
         <!-- Products Section -->
+
         <section class="products">
             <h1 style="text-align:center; margin:20px 0;color:#483C46;"><u>Our Products</u></h1>
             
             <table style="width:100%; text-align:center; table-layout:fixed;">
-                <tr><td colspan="4" style="background-color: transparent;"><h2><u>Kits</u></h2></td></tr>
+
+                <!-- Kits Row -->
+
+                <tr><td colspan="4" style="background-color:transparent;"><h2><u>Kits</u></h2></td></tr>
                 <tr>
                     <td>
-                        <h3>Starter Seed Kit</h3>
-                        <a href="products_Seed.html"><img src="../Images/seedkit.jpg" alt="Picture of seeds"></a>
+                        <h3>Mixed Seed Kit</h3>
+                        <img src="../Images/seedkit.jpg" alt="Picture of seeds">
                         <p><strong>Tons of different seeds to choose from</strong></p>
                         <p><s>5000Rs</s> <strong>4250Rs</strong></p>
+                        <a href="products_Seed.html" class="see-more-btn">See more</a>
                     </td>
                     <td>
                         <h3>Herb Growing Kit</h3>
                         <img src="../Images/herbkit.jpg" alt="Picture of different herbs">
-                        <p><strong>Complete home herb growing solution</strong></p>
+                        <p><strong>Completly natural herb growing solution</strong></p>
                         <p><s>3500Rs</s> <strong>2975Rs</strong></p>
                     </td>
                     <td>
@@ -81,14 +104,17 @@
                         <p><s>3500Rs</s> <strong>2975Rs</strong></p>
                     </td>
                 </tr>
-                <!-- New Row -->
+
+                <!-- Pots & Setup Row -->
+
                 <tr><td colspan="4" style="background-color: transparent"><h2><u>Pots & Setup</u></h2></td></tr>
                 <tr>
                     <td>
                         <h3>Indoor Pot Set</h3>
-                        <a href="products_pot.html"><img src="../Images/pot.jpg" alt="Picture of pots"></a>
-                        <p><strong>Compact and space efficient planter set</strong></p>
+                        <img src="../Images/pot.jpg" alt="Picture of pots">
+                        <p><strong>Compact and stylish ground pots</strong></p>
                         <p><s>3000Rs</s> <strong>2550Rs</strong></p>
+                        <a href="products_pot.html" class="see-more-btn">See more</a>
                     </td>
                     <td>
                         <h3>Hanging Pot</h3>
@@ -109,7 +135,9 @@
                         <p><s>3000Rs</s> <strong>2550Rs</strong></p>
                     </td>
                 </tr>
-                <!-- New Row-->
+
+                <!-- Plant Care Row-->
+
                 <tr><td colspan="4" style="background-color: transparent"><h2><u>Plant Care</u></h2></td></tr>
                 <tr>
                     <td>
@@ -137,7 +165,9 @@
                         <p><s>3500Rs</s> <strong>2975Rs</strong></p>
                     </td>
                 </tr>
-                <!-- New Row-->
+
+                <!-- Tools & Accessories Row-->
+
                 <tr><td colspan="4" style="background-color: transparent"><h2><u>Tools & Accessories</u></h2></td></tr>
                 <tr>
                     <td>
@@ -182,6 +212,7 @@
             </div>
         </footer>
 
+        <!-- Page Script -->
         <script src="../JS/script.js"></script>
     </body> 
 </html>

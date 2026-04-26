@@ -5,27 +5,34 @@
         <meta name="author" content="Group 2">
         <meta name="description" content="About Us page for UrbanSprout">
         <meta name="keywords" content="Urban gardening, team, about us">
-        <link rel="stylesheet" href="../CSS/style.css">
+        <link rel="stylesheet" href="../CSS/style.css"><!--External CSS-->
         <style>
-            .about td {
+            /* Team card grid */
+            .wrapper {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                justify-content: center;
+                margin: 20px;
+            }
+
+            /* Individual team member card */
+            .block {
                 background: rgba(236, 229, 240, 0.55);
                 border-radius: 10px;
-                padding: 20px;
-                vertical-align: top;
+                padding: 15px;
+                width: 220px;
+                text-align: center;
             }
 
-            .about table {
+            .block img {
                 width: 100%;
-                border-spacing: 15px;
-                text-align: left;
+                height: 300px;
+                border-radius: 8px;
             }
 
-            .about h3 {
-                margin-bottom: 10px;
-            }
-
-            .about ul {
-                padding-left: 20px;
+            .block h3 {
+                margin-top: 10px;
             }
         </style>
     </head>
@@ -45,113 +52,40 @@
             </ul>
         </nav>
     </header>
+    <!-- Page Content -->
+    <h1 style="text-align: center;color:whitesmoke;"> Our Team </h1>
+    <div class="wrapper">
+        <div class="block">
+            <h3>Saharsha Basnet</h3>
+            <a href="saharsha.html"><img src="../Images/saharsha.jpg" alt=""></a>
+        </div>
 
-    <section class="about">
-        <h1 style="text-align:center; margin:20px 0; color:blanchedalmond;">
-            About Our Team
-        </h1>
-        <table>
-        <!-- Saharsha -->
-        <tr>
-            <td>
-                <div style="display:flex; gap:15px;">
-                    <img src="../Images/saharsha.jpg" width="200" alt="Saharsha's picture" style="border-radius:8px;">
-                    <div>
-                        <h3>Saharsha Basnet</h3>
+        <div class="block">
+            <h3>Sandesh Raj Giri</h3>
+            <a href="sandesh.html"><img src="../Images/sandesh.jpg" alt=""></a>
+        </div>
 
-                        <p><strong>Education:</strong> BSc (Hons) Networking</p>
+        <div class="block">
+            <h3>Sushil Parajuli</h3>
+            <a href="sushil.html"><img src="../Images/sushil.jpg" alt=""></a>
+        </div>
 
-                        <p><strong>What I did:</strong></p>
-                        <ul>
-                            <li>Developed homepage layout</li>
-                            <li>Created base CSS styling</li>
-                        </ul>
-
-                        <p><strong>What I learned:</strong></p>
-                        <ul>
-                            <li>How HTML structure connects with CSS styling</li>
-                            <li>How external CSS improves consistency across pages</li>
-                        </ul>
-                    </div>
-                </div>
-            </td>
-
-        <!-- Sandesh -->
-            <td>
-                <div style="display:flex; gap:15px;">
-                    <img src="../Images/sandesh.jpg" width="200" height="240" alt="Sandesh's picture" style="border-radius:8px;">
-                    <div>
-                        <h3>Sandesh Raj Giri</h3>
-
-                        <p><strong>Education:</strong> BSc (Hons) Networking</p>
-
-                        <p><strong>What I did:</strong></p>
-                        <ul>
-                            <li>Developed sign-in page</li>
-                            <li>Implemented JavaScript validation and functions</li>
-                        </ul>
-
-                        <p><strong>What I learned:</strong></p>
-                        <ul>
-                            <li>Basic form validation using JavaScript</li>
-                            <li>How functions interact with HTML elements</li>
-                        </ul>
-                    </div>
-                </div>
-            </td>
-        </tr>
-
-        <!-- Sushil -->
-        <tr>
-            <td>
-                <div style="display:flex; gap:15px;">
-                    <img src="../Images/sushil.jpg" width="200" height="240" alt="Sushil's picture" style="border-radius:8px;">
-                    <div>
-                        <h3>Sushil Parajuli</h3>
-
-                        <p><strong>Education:</strong> BSc (Hons) Networking</p>
-
-                        <p><strong>What I did:</strong></p>
-                        <ul>
-                            <li>Developed product page</li>
-                            <li>Supported About Us page structure</li>
-                        </ul>
-
-                        <p><strong>What I learned:</strong></p>
-                        <ul>
-                            <li>How to structure product information using tables</li>
-                            <li>How layout consistency improves user experience</li>
-                        </ul>
-                    </div>
-                </div>
-            </td>
-
-        <!-- Joshna -->
-            <td>
-                <div style="display:flex; gap:15px;">
-                    <img src="../Images/joshna.jpg" width="200" alt="Joshna's picture" style="border-radius:8px;">
-                    <div>
-                        <h3>Joshna Karki</h3>
-
-                        <p><strong>Education:</strong> BSc (Hons) Networking</p>
-
-                        <p><strong>What I did:</strong></p>
-                        <ul>
-                            <li>Developed blog page</li>
-                            <li>Created research section and comparisons</li>
-                        </ul>
-
-                        <p><strong>What I learned:</strong></p>
-                        <ul>
-                            <li>How to present structured written content in HTML</li>
-                            <li>How research comparison improves website depth</li>
-                        </ul>
-                    </div>
-                </div>
-            </td>
-        </tr>
-        </table>
-    </section>
+        <div class="block">
+            <h3>Joshna Karki</h3>
+            <a href="joshna.html"><img src="../Images/joshna.jpg" alt=""></a>
+        </div>
+    </div>
+    <!-- Feedback Form -->
+    <div class="block" style="margin:20px auto; width: 300px;">
+        <h3>Feedback</h3>
+        <form>
+            <input type="text" placeholder="Name"> <br> <br>
+            <textarea placeholder="Message" rows="10" cols="40"></textarea>
+            <button type="submit" onclick="feedback()">Submit</button>
+        </form>
+    </div>
+    <!-- Page Script -->
+    <script src="../JS/script.js"></script>
     <!-- Footer -->
     <footer>
         <div class="footer-container">

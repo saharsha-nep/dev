@@ -10,44 +10,39 @@
             .product-page {
                 padding: 40px;
                 color: #ECE5F0;
-
-                max-width: 1100px;   /* keeps layout from stretching too wide on large screens */
-                margin: 0 auto;      /* centers the whole product section */
+                margin:auto;
             }
 
             .product-top {
                 display: flex;
-                gap: 60px;           /* controlled spacing between image and details (prevents cramped look) */
-                align-items: flex-start; /* aligns content from the top (not vertically centered) */
+                gap: 60px;
+                align-items: flex-start;
             }
 
             .product-image {
-                flex: 1;             /* takes proportional space (helps balance layout with right side) */
+                flex: 1;
             }
 
             .product-image img {
-                width: 100%;         /* makes image responsive within its container */
-                max-width: 400px;    /* prevents image from becoming too large */
-                border-radius: 10px; /* soft corners for modern UI look */
+                width: 100%;
+                max-width: 350px;
             }
 
             .product-details {
-                flex: 1.2;           /* slightly wider than image to reduce empty space and improve readability */
-
-                background: rgba(236, 229, 240, 0.55); /* creates a "card" effect to visually fill space */
-                padding: 25px;       /* internal spacing so content doesn't feel cramped */
+                flex: 1.2;
+                background: rgba(236, 229, 240, 0.55);
+                padding: 25px;
                 border-radius: 12px;
-
-                color: black;      /* darker text for readability on light background */
+                color: black;
             }
 
             .product-details h1 {
-                margin-bottom: 15px; /* separates title from rating/info below */
-                font-size: 28px;     /* makes product name dominant element */
+                margin-bottom: 15px;
+                font-size: 28px;
             }
 
             .product-meta {
-                margin-bottom: 15px; /* spacing before price section */
+                margin-bottom: 15px;
                 font-size: 18px;
             }
 
@@ -56,21 +51,18 @@
             }
 
             .price {
-                font-size: 24px;     /* makes price stand out as key info */
-                margin: 20px 0;      /* separates from elements above and below */
+                font-size: 24px;
+                margin: 20px 0;
             }
 
             .cart-btn {
                 background-color: #BDE4A8;
                 border: none;
-
-                padding: 12px 20px;  /* clickable size */
+                padding: 12px 20px;
                 border-radius: 8px;
-
                 cursor: pointer;
                 font-weight: bold;
-
-                margin-top: 10px;    /* space above button so it doesn't stick to price */
+                margin-top: 10px; 
             }
 
             .cart-btn:hover {
@@ -79,12 +71,10 @@
 
             .product-description,
             .product-reviews {
-                margin-top: 40px;    /* separates from top section */
-
-                background: rgba(236, 229, 240, 0.55); /* consistent card style */
+                margin-top: 40px;
+                background: rgba(236, 229, 240, 0.55);
                 padding: 20px;
                 border-radius: 10px;
-
                 color: black;
             }
 
@@ -110,6 +100,7 @@
         </header>
         <!-- Page Content-->
         <section class="product-page">
+            <a href="products.html" style="display:inline-block; margin-top:15px; margin-bottom:20px; color:#483C46; text-decoration:none; font-size:0.95rem;">← Back to Products</a>
             <div class="product-top">
                 <div class="product-image">
                     <img src="../Images/pot.jpg" alt="Picture of pots">
@@ -133,14 +124,14 @@
             <div class="product-description">
                 <h2>Description</h2>
                 <p>
-                    Upgrade your indoor gardening setup with this compact and stylish pot set.Designed for small spaces, these pots are perfect for growing herbs, flowers, or decorative plants at home. Made from durable materials with proper drainage, they help keep your plants healthy while adding a modern touch to your room.
+                    Make your indoor gardening setup efficient and stylish with this pot set! Being designed for small spaces, these pots are PERFECT for growing small herbs, flowers and decorative plants. 
                 </p>
             </div>
             <!-- REVIEWS -->
             <div class="product-reviews">
                 <h2>Customer Reviews</h2>
                 <div class="review">
-                    <p><strong>Harry:</strong> Amazing pot, made my plants look so much nicer.</p>
+                    <p><strong>Harry:</strong> Even the elder wand couldn't conjure up a pot better than this!</p>
                 </div>
                 <div class="review">
                     <p><strong>Potter:</strong> The pot does what it has to, came a bit cracked though, i like my pots untouched.</p>
